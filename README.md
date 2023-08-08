@@ -25,7 +25,6 @@
   - [Run](#run)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -101,11 +100,6 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 -  **Registration**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Coming Soon]()
-
 
 
 ## 🤝 Contributing <a name="contributing"></a>
