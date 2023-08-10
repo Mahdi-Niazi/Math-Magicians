@@ -16,13 +16,12 @@ const Calculator = () => {
   };
   return (
     <div className="container-calc">
-      <div className="display">
-        {total}
-        {operation}
-        {next}
-      </div>
       <div>
-        <input type="text" className="input" id="name" placeholder="0" />
+        <div className="input">
+          {total}
+          {operation}
+          {next}
+        </div>
         <div className="parent">
           <button type="button" className="button" onClick={handleEvent}>
             AC
