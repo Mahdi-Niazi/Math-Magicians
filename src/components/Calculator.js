@@ -46,7 +46,7 @@ const Calculator = () => {
             9
           </button>
           <button type="button" className="button-color" onClick={handleEvent}>
-            *
+            x
           </button>
           <button type="button" className="button" onClick={handleEvent}>
             4
