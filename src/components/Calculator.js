@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import calculate from '../logic/calculate';
-import './Calculator.css';
+import React, { useState } from "react";
+import calculate from "../logic/calculate";
+import "./Calculator.css";
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -34,7 +34,7 @@ const Calculator = () => {
             %
           </button>
           <button type="button" className="button-color" onClick={handleEvent}>
-            /
+            ÷
           </button>
           <button type="button" className="button" onClick={handleEvent}>
             7
