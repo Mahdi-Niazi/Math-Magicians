@@ -1,72 +1,90 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 import './Calculator.css';
 
-const Calculator = () => (
-  <div className="container-calc">
-    <div>
-      <input type="text" className="input" id="name" placeholder="0" />
-      <div className="parent">
-        <button type="button" className="button">
-          AC
-        </button>
-        <button type="button" className="button">
-          +/-
-        </button>
-        <button type="button" className="button">
-          %
-        </button>
-        <button type="button" className="button-color">
-          /
-        </button>
-        <button type="button" className="button">
-          7
-        </button>
-        <button type="button" className="button">
-          8
-        </button>
-        <button type="button" className="button">
-          9
-        </button>
-        <button type="button" className="button-color">
-          x
-        </button>
-        <button type="button" className="button">
-          4
-        </button>
-        <button type="button" className="button">
-          5
-        </button>
-        <button type="button" className="button">
-          6
-        </button>
-        <button type="button" className="button-color">
-          -
-        </button>
-        <button type="button" className="button">
-          1
-        </button>
-        <button type="button" className="button">
-          2
-        </button>
-        <button type="button" className="button">
-          3
-        </button>
-        <button type="button" className="button-color">
-          +
-        </button>
-        <button type="button" className="button-zero">
-          0
-        </button>
-        <button type="button" className="button">
-          .
-        </button>
-        <button type="button" className="button-color">
-          =
-        </button>
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+  const { total, operation, next } = state;
+  const handleEvent = (e) => {
+    const value = e.target.textContent;
+    const calculat = calculate(state, value);
+    setState(calculat);
+  };
+  return (
+    <div className="container-calc">
+      <div className="display">
+        {total}
+        {operation}
+        {next}
+      </div>
+      <div>
+        <input type="text" className="input" id="name" placeholder="0" />
+        <div className="parent">
+          <button type="button" className="button" onClick={handleEvent}>
+            AC
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            +/-
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            %
+          </button>
+          <button type="button" className="button-color" onClick={handleEvent}>
+            /
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            7
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            8
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            9
+          </button>
+          <button type="button" className="button-color" onClick={handleEvent}>
+            *
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            4
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            5
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            6
+          </button>
+          <button type="button" className="button-color" onClick={handleEvent}>
+            -
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            1
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            2
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            3
+          </button>
+          <button type="button" className="button-color" onClick={handleEvent}>
+            +
+          </button>
+          <button type="button" className="button-zero" onClick={handleEvent}>
+            0
+          </button>
+          <button type="button" className="button" onClick={handleEvent}>
+            .
+          </button>
+          <button type="button" className="button-color" onClick={handleEvent}>
+            =
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Calculator;
