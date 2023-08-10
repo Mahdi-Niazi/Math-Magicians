@@ -4,12 +4,27 @@
   box-sizing: border-box;
 }
 
+.App {
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+}
+
 .container-calc {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  margin: 100px auto;
+}
+
+.quotes {
+  border: 1px solid rgb(72, 70, 70);
+  width: 500px;
+  margin: 24px;
+}
+
+.quotes p {
+  margin: 24px;
 }
 
 .input {
