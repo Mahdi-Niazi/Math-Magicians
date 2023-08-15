@@ -4,20 +4,23 @@
   box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-.ul-ele{
+
+.ul-ele {
   display: flex;
 }
-.ul-ele li{
+
+.ul-ele li {
   list-style: none;
   padding: 10px;
   border-left: 1px solid black;
 }
-.ul-ele > .home{
+
+.ul-ele > .home {
   border: none;
 }
 
@@ -29,23 +32,24 @@
 
 .Home-txt,
 .container-calc,
-.quotes{
+.quotes {
   padding: 100px;
 }
-.Home-txt > h1{
+
+.Home-txt > h1 {
   padding-bottom: 10px;
 }
 
 .container-calc {
   display: flex;
   justify-content: space-around;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
 .quotes {
   margin: 24px;
-
 }
+
 .quotes p {
   margin: 24px;
   font-size: 40px;
