@@ -4,27 +4,51 @@
   box-sizing: border-box;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.ul-ele{
+  display: flex;
+}
+.ul-ele li{
+  list-style: none;
+  padding: 10px;
+  border-left: 1px solid black;
+}
+.ul-ele > .home{
+  border: none;
+}
+
 .App {
   display: flex;
   margin: 100px auto;
   justify-content: center;
 }
 
+.Home-txt,
+.container-calc,
+.quotes{
+  padding: 100px;
+}
+.Home-txt > h1{
+  padding-bottom: 10px;
+}
+
 .container-calc {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
+  justify-content: space-around;
+  padding-top:30px;
 }
 
 .quotes {
-  border: 1px solid rgb(72, 70, 70);
-  width: 500px;
   margin: 24px;
-}
 
+}
 .quotes p {
   margin: 24px;
+  font-size: 40px;
 }
 
 .input {
