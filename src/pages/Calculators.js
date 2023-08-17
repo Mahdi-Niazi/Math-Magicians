@@ -16,7 +16,7 @@ const Calculators = () => {
   return (
     <>
       <div className="container-calc">
-        <h1>Let&apos;s do some maths</h1>
+        <h1 data-testid="h2Id">Let&apos;s do some maths</h1>
         <div>
           <div className="input">
             {total}
